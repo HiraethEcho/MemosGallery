@@ -6,8 +6,8 @@ console.log(
 photos();
 function photos() {
   // latest api support
-  // fetch("your_memos_api_url/api/v1/memos?filter="+ encodeURIComponent("creator == 'users/1' && visibilities == ['PUBLIC'] && tag_search == ['相册']"))
-  fetch("https://memos.877675.xyz/api/v1/memo?creatorId=hiraeth")
+  fetch("memos.877675.xyz/api/v1/memos?filter="+ encodeURIComponent("creator == 'users/1' && visibilities == ['PUBLIC'] && tag_search == ['gallery']"))
+  //fetch("https://memos.877675.xyz/api/v1/memo?creatorId=101")
   // 记得修改memos地址
     .then((res) => res.json())
     .then((data) => {
